@@ -5,10 +5,18 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/nodemon/bin/nodemon.js --use-strict server.js"
+    "start": "babel-watch server.js"
   },
   "author": "Doctrine",
   "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-watch": "^2.0.7",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  },
   "dependencies": {
     "angular": "^1.7.0",
     "ejs": "^2.6.1",
